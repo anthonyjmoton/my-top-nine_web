@@ -16,48 +16,44 @@ body {
         }
     }
 
-    .header-img {
-        margin-left: 1.5%;
-        padding-bottom: 15px;
-        border-bottom: 1px solid black;
-    }
+		
+		.box {
+			margin: @margin auto;
+			background: black;
+			width: 500px;
+			height: 500px;
+			
+			h2, p {
+				color: white;
+				text-align: center;
+				width: 50%;
+			}
+		}
 
-    .background {
-        background: rgba(211, 211, 211, 1);
-    
+   .background {
 
-    .intro {
-        text-align: left;
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 12px;
-            text-decoration: underline;
-        }
-        p {
-            font-size: 1.3rem;
-            margin-bottom: @margin;
-        }
-    }
+   	.main {
+      width: 100%;
 
-
-    .main {
-        // background-color: lightgray;
-        // padding: 15px;
-
-        width: 100%;
-        background: rgba(211, 211, 211, 1);
-
-        .first-section, .middle-section, .last-section {
-            .displayFlex(space-around, center);
-            margin-bottom: @margin;
-            margin-left: 1.3%;
+      .first, .second {
+			div {
+				margin: @margin;
+				img {
+					width: 200px;
+					border: 2px solid black;
+				}
+			}
+			
+         .displayFlex(space-around, center);
+         margin-bottom: 1%;
+         // margin-left: 1.3%;
             
             
             // h2 {
             //     text-align: center;
             // }
             p {
-                padding: 2%;
+                padding: 1%;
             }
         }
        }
