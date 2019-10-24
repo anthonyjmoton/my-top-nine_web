@@ -312,44 +312,39 @@ body {
 body header nav {
   display: flex;
   justify-content: space-around;
+  flex-direction: center;
   align-items: center;
   margin: 3%;
 }
 body header nav a {
   color: dodgerblue;
 }
-body .box {
+body .intro {
   margin: 3% auto;
   background: black;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  padding: 2%;
 }
-body .box h2,
-body .box p {
+body .intro h2,
+body .intro p {
   color: white;
+  margin: 2% auto;
   text-align: center;
   width: 50%;
 }
-body .background .main {
+body .main {
   width: 100%;
 }
-body .background .main .first,
-body .background .main .second {
+body .main .first {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 1%;
 }
-body .background .main .first div,
-body .background .main .second div {
-  margin: 3%;
+body .main .first .team {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
 }
-body .background .main .first div img,
-body .background .main .second div img {
-  width: 200px;
-  border: 2px solid black;
-}
-body .background .main .first p,
-body .background .main .second p {
-  padding: 1%;
+body .main .first img {
+  border: 1px solid red;
+  width: 20%;
 }
