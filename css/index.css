@@ -304,47 +304,187 @@ template {
 [hidden] {
   display: none;
 }
-body {
-  width: 900px;
+header .navbar {
+  background: #38b6ff;
+  width: 98%;
   margin: 0 auto;
-  line-height: 1;
+  border-radius: 2%;
 }
-body header nav {
+header .navbar nav {
   display: flex;
   justify-content: space-around;
   flex-direction: center;
   align-items: center;
   margin: 3%;
 }
-body header nav a {
+header .navbar nav a {
   color: dodgerblue;
 }
-body .intro {
+.container {
+  background: linear-gradient(#ffffff, darkgray);
+  width: 1000px;
+  margin: 0 auto;
+  line-height: 1;
+}
+.intro {
   margin: 3% auto;
   background: black;
   width: 100%;
   padding: 2%;
+  border-radius: 2%;
 }
-body .intro h2,
-body .intro p {
+.intro h2,
+.intro p {
   color: white;
   margin: 2% auto;
   text-align: center;
   width: 50%;
 }
-body .main {
-  width: 100%;
+.intro h2 {
+  font-size: 2rem;
 }
-body .main .first {
-  display: flex;
+.intro p {
+  font-size: 1.5rem;
 }
-body .main .first .team {
-  border: 1px solid blue;
+.intro p a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+.top {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
+}
+.top .top-info {
+  width: 35%;
+}
+.top .top-info h2 {
+  font-family: 'Open Sans Condensed';
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+.top .top-info p {
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 2rem;
+  background: black;
+  border-radius: 2%;
+  margin-left: 2%;
+  color: white;
+  padding: 4%;
+}
+.top .top-img {
+  width: 600px;
+}
+.top .top-img img {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 15%;
+  border-radius: 3%;
+}
+.hr {
+  margin: 5% 0;
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  margin-bottom: 20%;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+.main {
+  background: rgba(0, 0, 0, 0.048);
+  border: 1px double black;
+  margin: 0 auto;
+}
+.main .first,
+.main .second {
+  display: flex;
+  justify-content: space-between;
+}
+.main .first .team,
+.main .second .team {
+  margin: 3% auto;
   width: 30%;
 }
-body .main .first img {
-  border: 1px solid red;
-  width: 20%;
+.main .first .team .img,
+.main .second .team .img {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.main .first .team .img img,
+.main .second .team .img img {
+  width: 100%;
+  border-radius: 2%;
+}
+.main .first .team .right-text,
+.main .second .team .right-text {
+  background: white;
+  margin-top: -3%;
+  transform: translateY(-20px);
+}
+.main .first .team h2,
+.main .second .team h2,
+.main .first .team hr,
+.main .second .team hr {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  text-align: center;
+  background: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.main .first .team hr,
+.main .second .team hr {
+  border-top: 3px double #8c8b8b;
+}
+.main .first .team .style,
+.main .second .team .style {
+  font-size: 2.2em;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+.main .first .team p,
+.main .second .team p {
+  margin: 0;
+  padding: 2.5%;
+  background: white;
+  font-size: 2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+@media (max-width: 800px) {
+  body {
+    width: 700px;
+  }
+  body .info {
+    font-size: 3em;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0 auto;
+  }
+  body .intro {
+    width: 75%;
+    margin: 0 auto;
+  }
+  body .top {
+    flex-direction: column-reverse;
+  }
+  body .top .top-info {
+    margin: 0 auto;
+    width: 65%;
+  }
+  body .hr {
+    width: 75%;
+    margin: 5% auto;
+  }
+  body .main {
+    max-width: 800px;
+    width: 100%;
+  }
+  body .outro {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
