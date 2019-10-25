@@ -304,34 +304,43 @@ template {
 [hidden] {
   display: none;
 }
-header .navbar {
+header {
+  border-bottom: 3px dashed #ffde59;
   background: #38b6ff;
-  width: 98%;
-  margin: 0 auto;
-  border-radius: 2%;
 }
-header .navbar nav {
+header .navbar {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: space-around;
-  flex-direction: center;
   align-items: center;
-  margin: 3%;
+  margin: 0 auto;
+}
+header .navbar nav h1 {
+  color: white;
 }
 header .navbar nav a {
-  color: dodgerblue;
+  color: white;
+  font-size: 16px;
 }
 .container {
   background: linear-gradient(#ffffff, darkgray);
-  width: 1000px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   line-height: 1;
+}
+@media (max-width: 500px) {
+  .container {
+    margin: 0;
+  }
 }
 .intro {
   margin: 3% auto;
   background: black;
   width: 100%;
-  padding: 2%;
-  border-radius: 2%;
+  padding: 2% 0;
+  border-radius: 5px;
 }
 .intro h2,
 .intro p {
@@ -461,11 +470,13 @@ header .navbar nav a {
   }
 }
 @media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
   body {
     margin: 0 auto;
   }
   body .intro {
-    width: 75%;
     margin: 0 auto;
   }
   body .top {

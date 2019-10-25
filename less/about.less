@@ -2,25 +2,37 @@
 	
 
 	header {
-	.navbar {
-		background: #38b6ff;
-		width: 98%;
-		margin: 0 auto;
-		border-radius: 2%;
+			border-bottom: 3px dashed #ffde59;
+			background: #38b6ff;
+			
+			.navbar {
+				width: 100%;
+				max-width: 800px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin: 0 auto;
 		nav {
-		.displayFlex(space-around, center, center);
-		margin: @margin;
+			h1 {
+				color: white;
+			}
 		a {
-			color: dodgerblue;
+			color: white;
+			font-size: 16px;
 			}
 		}
 	}
 
 	}
 
-		.container {
+	.container {
+		@media @mobile {
+			margin: 0;
+		}
+
 	background: linear-gradient(#ffffff, darkgray);
-   width: 1000px;
+	width: 100%;
+	max-width:800px;
    margin: 0 auto;
    line-height: 1;
 		}
@@ -28,8 +40,8 @@
 			margin: @margin auto;
 			background: black;
 			width: 100%;
-			padding: 2%;
-			border-radius:2%;
+			padding: 2% 0;
+			border-radius:5px;
 			
 			h2, p {
 				color: white;
@@ -169,11 +181,15 @@
 }
 
 @media @mobile {
+
+	.navbar {
+		flex-direction: column;
+	}
+
 	body {
 		margin: 0 auto;
 
 		.intro {
-			width: 75%;
 			margin: 0 auto;
 		}
 
